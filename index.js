@@ -33,7 +33,7 @@ function guess_number(){
             score_text.innerText = `Score: ${score}`
         } 
         else{
-            msg.innerText=`Sorry! Try Again. Correct number is ${rand_num}`
+            msg.innerText=`Wrong answer! Correct umber is ${rand_num}`
             msg.classList.remove('success-msg');
             msg.classList.add('failed-msg') 
         }
