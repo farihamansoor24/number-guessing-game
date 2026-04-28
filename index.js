@@ -9,21 +9,26 @@ function guess_number(){
     let guess_num = document.getElementById('number').value;
     let game_level= document.getElementById('level').value;
     let level_text = document.getElementById('select_level_text');
-    
+    let level;
     if(game_level == 'easy'){
+     level = 10;       
      rand_num  = Math.floor(Math.random()*10)+1;
      level_text.innerText='Select a number between 1 to 10'
     }
     else if(game_level == 'medium'){
+        level = 50; 
      rand_num  = Math.floor(Math.random()*50)+1;
      level_text.innerText='Select a number between 1 to 50'
     }
     else {
+        level = 100; 
      rand_num  = Math.floor(Math.random()*100)+1;
      level_text.innerText='Select a number between 1 to 100'
     }
-        
-    if(guess_num != ''){
+    if(guess_num >= rand_num){
+        alert(` Number should be less than ${level} `)
+    }
+    else if(guess_num != ''){
     if(rand_num == guess_num){
         //    document.getElementById('game-box').style.backgroundImage="url('popper.gif')"
             msg.innerText=`Congrats! your guessed number is correct.`
@@ -38,6 +43,7 @@ function guess_number(){
             msg.classList.add('failed-msg') 
         }
     }
+    
 
 
 }
