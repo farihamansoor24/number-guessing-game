@@ -25,6 +25,7 @@ function guess_number(){
         
     if(guess_num != ''){
     if(rand_num == guess_num){
+        //    document.getElementById('game-box').style.backgroundImage="url('popper.gif')"
             msg.innerText=`Congrats! your guessed number is correct.`
             msg.classList.remove('failed-msg')
             msg.classList.add('success-msg');
@@ -46,6 +47,9 @@ function reset_game(){
     document.getElementById('number').value=''
     msg.classList.remove('failed-msg','success-msg')
     score_text.innerText = `Score: ${score}`
+    // document.getElementById('level').value='';
+    // document.getElementById('game-box').classList.add('d-none');
+    // document.getElementById('level-box').classList.remove('d-none');
     
 }
 
