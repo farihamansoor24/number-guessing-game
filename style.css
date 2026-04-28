@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+     font-family: "Comic Sans MS", cursive;
+}
+body{
+    background: url('bg-image.gif') no-repeat;
+    background-size: cover;
+}
+h1{
+    color:tomato;
+}
+h2{
+    color: purple;
+}
+input{
+    width: 100px;
+    height: 50px;
+    text-align: center !important;
+}
+select{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+button{
+    box-shadow: 10px 5px 15px gray;
+}
+.box{
+    width:500px;
+    height:500px;
+    background-color: rgba(0,255, 255,.5);
+    border-radius: 15px;
+}
+.level-box{
+    width:300px;
+    height: 300px;
+    background-color: rgba(234, 220, 93, 0.5);
+    border-radius: 15px;
+}
+.success-msg{
+    font-size: 18px;
+    color:rgb(7, 80, 7);
+    font-weight: bold;
+}
+.failed-msg{
+    font-size: 18px;
+    color:yellow;
+    font-weight: bold;
+}

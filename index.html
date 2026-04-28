@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+     <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+ 
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 class="text-center mt-3">Number Guessing Game</h1>
+    <div class="container level-box mt-5 text-center p-5" id="level-box">
+    <h2 class="text-warning">Select Level</h2>
+    <select class="my-3" id="level">
+      <option value="">Select Level</option>
+      <option value="easy">Easy(1-10)</option>
+      <option value="medium">Medium(1-50)</option>
+      <option value="difficult">Difficult(1-100)</option>
+    </select>
+    <br>
+    <button class="btn btn-danger btn-lg mt-3" onclick="start_game()">Start Game</button><br>
+</div>
+<div class="container box mt-5 text-center p-5 d-none" id="game-box">
+    <h2>Guess Your Number</h2>
+    <p class="text-danger fw-bold" id="select_level_text"></p>
+    <p id="msg"></p>
+    <input type="text" class="number" id="number"><br>
+    <p class="py-2 fw-bold" id="score-text">Score:0</p>
+    <button class="btn btn-danger btn-lg mt-3" onclick="guess_number()">Guess Number</button><br>
+        <button class="btn btn-warning btn-lg mt-3" onclick="reset_game()">Restart Game</button>
+</div>
+
+     <script src="index.js"></script>
+      <!-- Bootstrap JS CDN  -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+</html>
