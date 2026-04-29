@@ -17,6 +17,7 @@ header {
     color: burlywood;
 }
 h2{
+    min-width: 240px;
     color: brown;
     font-weight: bold;
 }
